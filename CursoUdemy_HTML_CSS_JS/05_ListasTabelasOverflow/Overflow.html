@@ -1,0 +1,72 @@
+<!DOCTYPE html><!--informa ao navegador qual a versão do html que deve ser
+     renderizada-->
+<html lang="pt-br">
+
+<head>
+    <title>Página Inicial</title> <!--"Nome da página"-->
+    <meta charset="utf-8"><!--Para que possa ter coisa gramticais,acento-->
+    <meta name="author" content="Arthur"><!--Nome do autor-->
+    <meta name="description" content="teste estrutura html"><!--Passar uma descrição
+         do que será encontrado na página-->
+    <meta name="keywords" content="Estrutura,html5,teste"><!--Informa as palavras 
+        chaves em relação a essa página-->
+
+    <style>
+        div{
+            padding:2%;
+            margin: 50px 2%;
+            border:1px solid black;
+            width:20%;
+            display:inline-block;
+            height:100px;
+            font-family:sans-serif;
+            font-size:18px;
+        }
+        .div1{
+            overflow:visible;
+        }
+        .div2{
+            overflow:hidden;
+        }
+        .div3{
+            overflow:scroll;
+        }
+        .div4{
+            overflow: auto;/* Se precisar de barra de rolagem bota */
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Tratar o conteudo que excede algum elemento -->
+    <div class="div1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptatem quia beatae, laudantium cupiditate
+            rem commodi omnis libero accusamus enim maiores exercitationem error inventore tenetur! Beatae itaque illum
+            cum inventore Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque error unde non dolore
+            eligendi voluptate ipsum est nulla itaque excepturi facilis neque et, autem fugit quod eum aut! Dolorem,
+            fugit.</p>
+    </div>
+
+    <div class="div2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptatem quia beatae, laudantium cupiditate
+            rem commodi omnis libero accusamus enim maiores exercitationem error inventore tenetur! Beatae itaque illum
+            cum inventore Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque error unde non dolore
+            eligendi voluptate ipsum est nulla itaque excepturi facilis neque et, autem fugit quod eum aut! Dolorem,
+            fugit.</p>
+
+    </div>
+
+    <div class="div3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, 
+            .</p>
+    </div>
+
+    <div class="div4">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, 
+            </p>
+    </div>
+
+</body>
+
+</html>

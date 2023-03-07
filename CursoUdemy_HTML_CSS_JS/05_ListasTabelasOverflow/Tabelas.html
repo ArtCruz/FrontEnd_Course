@@ -1,0 +1,118 @@
+<!DOCTYPE html><!--informa ao navegador qual a versão do html que deve ser
+     renderizada-->
+<html lang="pt-br">
+
+<head>
+    <title>Página Inicial</title> <!--"Nome da página"-->
+    <meta charset="utf-8"><!--Para que possa ter coisa gramticais,acento-->
+    <meta name="author" content="Arthur"><!--Nome do autor-->
+    <meta name="description" content="teste estrutura html"><!--Passar uma descrição
+         do que será encontrado na página-->
+    <meta name="keywords" content="Estrutura,html5,teste"><!--Informa as palavras 
+        chaves em relação a essa página-->
+
+    <style>
+
+    </style>
+
+</head>
+
+<body><!-- Mostrar Dados Tabulares -->
+    <!-- Principais Tags -->
+    <table><!-- Sem mesclar(uma linha com só uma td, NÃO PODE) -->
+        <tr><!-- Table Row -->
+            <td>1A</td><td>1B</td><!-- Table Data -->
+        </tr>
+        <tr>
+            <td>2A</td><td>2B</td>
+        </tr>
+        <tr>
+            <td>3A</td><td>3B</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- Colspan e Rowspan, mesclagem de linha e coluna -->
+    <table>
+        <tr>
+            <td colspan="2">1A</td>
+        </tr>
+        <tr>
+            <td>2A</td> <td>2B</td>
+        </tr>
+        <tr>
+            <td>3A</td> <td>3B</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table>
+        <tr>
+            <td rowspan="2">1A</td>
+            <td>1B</td>
+        </tr>
+        <tr>
+            <td>2B</td>
+        </tr>
+        <tr>
+            <td>3A</td><td>3B</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table>
+        <tr>
+            <th>1A</th><th>1B</th><!-- TH de HEAD -->
+        </tr>
+        <tr>
+            <td>2A</td><td>2B</td>
+        </tr>
+        <tr>
+            <td>3A</td><td>3B</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table>
+        <thead><!-- Cabeçalho -->
+            <th>1A</th><th>1B</th>
+        </thead>
+        <tbody><!-- Body -->
+            <td>2A</td><td>2B</td>
+        </tbody>
+        <tbody>
+            <td>3A</td><td>3B</td>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <table>
+        <thead>
+            <th>1A</th><th>1B</th>
+        </thead>
+        <tfoot><!-- Atenção com o tfoot -->
+            <td>2A</td><td>2B</td>
+        </tfoot>
+        <tbody>
+            <td>3A</td><td>3B</td>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <!-- Propriedade Border Colapse -->
+
+    <!-- |___||___| -Separate -->
+    <!-- |___||___| -->
+
+    <!-- |___|___| -Collapse  -->
+    <!-- |___|___| -->
+
+</body>
+
+</html>

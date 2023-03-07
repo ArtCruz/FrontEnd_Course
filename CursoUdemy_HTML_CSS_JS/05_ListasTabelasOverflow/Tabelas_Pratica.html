@@ -1,0 +1,110 @@
+<!DOCTYPE html><!--informa ao navegador qual a versão do html que deve ser
+     renderizada-->
+<html lang="pt-br">
+
+<head>
+    <title>Página Inicial</title> <!--"Nome da página"-->
+    <meta charset="utf-8"><!--Para que possa ter coisa gramticais,acento-->
+    <meta name="author" content="Arthur"><!--Nome do autor-->
+    <meta name="description" content="teste estrutura html"><!--Passar uma descrição
+         do que será encontrado na página-->
+    <meta name="keywords" content="Estrutura,html5,teste"><!--Informa as palavras 
+        chaves em relação a essa página-->
+
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            width:80%;
+            margin: auto;
+            background:beige;
+        }
+
+        th{
+            background: rgb(228, 191, 1);
+            border: 5px solid chocolate;
+            padding: 15px;
+        }
+
+        td{
+            border:1px solid black;
+            text-align:center;
+            padding:10px;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+    <table>
+
+        <caption>Tabela de Preços de Cursos</caption><!-- Título da Tabela e ajuda na Acessibilidade -->
+
+        <thead>
+            <tr>
+                <th>Área</th>
+                <th>Curso</th>
+                <th>Investimento</th>
+            </tr>
+        </thead>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Valores Sujeitos a Alterações Sem Prévios Avisos</td>
+            </tr>
+        </tfoot>
+
+        <tbody>
+            <tr>
+                <td rowspan="3">Design</td>
+                <td>InDesign</td>
+                <td>R$1.000,00</td>
+            </tr>
+
+            <tr>
+                
+                <td>Photoshop</td>
+                <td>R$1.000,00</td>
+            </tr>
+
+            <tr>
+                
+                <td>Ilustrator</td>
+                <td>R$1.000,00</td>
+            </tr>
+
+            <tr>
+                <td rowspan="4">Development</td>
+                <td>HTML5</td>
+                <td>R$1.000,00</td>
+            </tr>
+
+            <tr>
+                
+                <td>CSS3</td>
+                <td>R$1.000,00</td>
+            </tr>
+
+            <tr>
+                
+                <td>JavaScript</td>
+                <td>R$1.000,00</td>
+            </tr>
+
+            <tr>
+                
+                <td>PHP</td>
+                <td>R$1.000,00</td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+</body>
+
+</html>
