@@ -1,0 +1,124 @@
+<!DOCTYPE html><!--informa ao navegador qual a versão do html que deve ser
+     renderizada-->
+<html lang="pt-br">
+
+<head>
+    <title>Página Inicial</title> <!--"Nome da página"-->
+    <meta charset="utf-8"><!--Para que possa ter coisa gramticais,acento-->
+    <meta name="author" content="Arthur"><!--Nome do autor-->
+    <meta name="description" content="teste estrutura html"><!--Passar uma descrição
+         do que será encontrado na página-->
+    <meta name="keywords" content="Estrutura,html5,teste"><!--Informa as palavras 
+        chaves em relação a essa página-->
+
+    <style>
+
+        .formLogin{
+            width: 250px;
+            margin: 50px auto 0;
+            font-family: sans-serif;
+        }
+        .formLogin fieldset{
+            background: grey;
+        }
+        .formLogin label{
+            margin-top: 10px;
+            display:block;
+        }
+        .formLogin legend{
+            background: rgb(242, 156, 156);
+            display:inline-block;
+            padding:10px;
+        }
+        #user, #password, .btn{
+            display: block;
+            width:100%;
+            box-sizing: border-box;
+            font-size: 18px;
+        }
+        #user, #password{
+            background: rgb(205, 205, 205);
+        }
+
+        #user:focus, #password:focus{
+            background:white;
+        }
+
+        .btn{
+            margin-top:13px;
+            background: yellow;
+        }
+        #user{
+            margin-bottom: 10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Exemplo de Formulário</h1>
+    
+    <form action="#" method="POST" class="formLogin"><!-- Info sensiveis -->
+
+        <fieldset>
+
+            <legend>Login</legend>
+
+            <label for="user">Digite o seu Usuário</label>
+            <input type="text" name="user" id="user" autofocus><!-- Atributo name é utilizado para nomear essa seção para então poder realizar os comandos do back-end, Autofocus já deixa o mouse clica na area já deixa pronto pra digitar -->
+
+            <label for="password">Digite a sua Senha</label>
+            <input type="password" name="password" id="password">
+
+            <input type="submit" value="Logar" class="btn">
+        </fieldset>
+
+    </form>
+
+    <!-- 
+        Tipos de Entrada de Dados
+
+        input:
+        
+        *text
+        *password
+        *checkbox
+        *radio
+        *file
+        *hidden
+        *submit
+        *button
+        *reset
+        
+        input(HTML5):
+        
+        *email
+        *tel
+        *url
+        *search
+        *number
+        *range
+        *date
+        *time
+        *color
+
+        - textarea
+        - select
+        - option
+
+        Alguns atributos:
+        
+        autofocus --- max
+        checked ----- mim
+        required ---- cols
+        maxlength --- rows
+        multiple ---- size
+        placeholder - step
+     -->
+
+
+</body>
+
+</html>

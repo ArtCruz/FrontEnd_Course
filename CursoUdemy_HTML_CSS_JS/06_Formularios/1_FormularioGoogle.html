@@ -1,0 +1,32 @@
+<!DOCTYPE html><!--informa ao navegador qual a versão do html que deve ser
+    renderizada-->
+<html lang="pt-br">
+
+<head>
+   <title>Página Inicial</title> <!--"Nome da página"-->
+   <meta charset="utf-8"><!--Para que possa ter coisa gramticais,acento-->
+   <meta name="author" content="Arthur"><!--Nome do autor-->
+   <meta name="description" content="teste estrutura html"><!--Passar uma descrição
+        do que será encontrado na página-->
+   <meta name="keywords" content="Estrutura,html5,teste"><!--Informa as palavras 
+       chaves em relação a essa página-->
+
+   <style>
+
+   </style>
+
+</head>
+
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+   <!--  <form action="pagina.sql" method="get">, quando clicar no botao ok os dados serão enviados para esse servidor, metodo get é visualizado na própria url(poucos dados e sem problema com a segurança), o post é enviado junto com a requisição(muitos dados ou preciso de uma segurança maior)-->
+    <form action="http://google.com/search" method="get" target="_blank">
+        <input type="text" name="q"><!-- o google está esperando pelo q para receber um valor, olhe a barra de pesquisa ali aparece ?q="o que vc escreveu", se vc trocar o q por outra letra ele não irá fazer a pesquisa -->
+        <input type="submit" value="ok" >
+
+    </form>
+
+</body>
+
+</html>
