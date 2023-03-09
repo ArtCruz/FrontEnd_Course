@@ -1,0 +1,49 @@
+<!DOCTYPE html><!--informa ao navegador qual a versão do html que deve ser
+    renderizada-->
+<html lang="pt-br">
+
+<head>
+   <title>Página Inicial</title> <!--"Nome da página"-->
+   <meta charset="utf-8"><!--Para que possa ter coisa gramticais,acento-->
+   <meta name="author" content="Arthur"><!--Nome do autor-->
+   <meta name="description" content="teste estrutura html"><!--Passar uma descrição
+        do que será encontrado na página-->
+   <meta name="keywords" content="Estrutura,html5,teste"><!--Informa as palavras 
+       chaves em relação a essa página-->
+
+   <style>
+
+        div{
+            height: 100px;
+            width:100px;
+            background-color: orange;
+
+
+            /* CubicBezier.com para entender melhor e visualizar melhor a propriedade */
+            transition-property: width,height;/* ou só width ou height , ou dois ou all*/
+            transition-duration: .75s, .75s;
+            transition-timing-function: cubic-bezier(.67,-0.38,.5,1.5);
+            /* Linear, ease, ease-in, ease-out,ease-in-out */
+            transition-delay: .1s;
+        }
+
+        div:hover{
+            width: 200px;
+            height: 200px;
+        }
+
+   </style>
+
+</head>
+
+<body>
+
+    <h1>Estrutura Básica</h1>
+
+    <div>
+
+    </div>
+
+</body>
+
+</html>
