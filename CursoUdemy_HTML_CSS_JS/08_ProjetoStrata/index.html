@@ -108,6 +108,7 @@
 
                 <form method="post">
 
+                    <label for="nome">Nome: </label>
                     <input type="text" name="nome" id="nome" placeholder="Nome">
                     <input type="email" name="email" id="email" placeholder="Email">
 
@@ -119,15 +120,15 @@
                 <address>
                     
                     <p>                        
-                        <span>Endereço</span>
+                        <span>Endereço: </span>
                         1234 Somewhere Rd. Nashville, TN 00000 United States of Guarana
                     </p>
                     <p>                        
-                        <span>Telefone</span>
+                        <span>Telefone: </span>
                         123-456-789
                     </p>
                     <p>                        
-                        <span>E-mail</span>
+                        <span>E-mail: </span>
                         email@server.com
                     </p>
 
@@ -141,18 +142,18 @@
                 <h3>Elements</h3>
 
                 <h4>Text</h4>
-                <p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>. This is <sup>superscript</sup> text and this is <sub>subscript</sub> text. This is <!-- Dá pra usar o <u></u> mas é mais indicado no CSS -->underlined and this is <code>code: for (;;) { ... }</code>. Finally, this is a <a href="#">link</a>.</p>
+                <p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>. This is <sup>superscript</sup> text and this is <sub>subscript</sub> text. This is <!-- Dá pra usar o <u></u> mas é mais indicado no CSS --><u>underlined</u> and this is <code>code: for (;;) { ... }</code>. Finally, this is a <a href="#">link</a>.</p>
             
 
             <hr>
 
             <blockquote cite="http://developer.mozilla.org">
                 <p>Essa é uma citação tirada da Mozilla Developer Center.</p>
-            </blockquote>
+            </blockquote><!--Citações Maiores-->
 
             <p>According to Mozilla's website, 
                 <q cite="http://www.mozilla.org/en-US/about/history/details/">
-                Firefox 1.0 was released in 2004 and became a big success.</q>
+                Firefox 1.0 was released in 2004 and became a big success.</q><!--Citações Menores-->
             </p>
 
             <h4>Preformatted</h4>
@@ -160,7 +161,7 @@
             <pre>
                 <code>
 &lt;script&gt;<!-- A indentação fica salva no portanto tem que ficar sem nenhum espaço -->
-alert('oi')
+    alert('oi');
 &lt;/script&gt;
                 </code>
             </pre>
@@ -202,8 +203,7 @@ alert('oi')
 
             <i class="fa-brands fa-facebook icon"></i>
             <i class="fa-brands fa-twitter icon"></i>
-
-        
+                    
 
         <h5>Actions</h5>
 
