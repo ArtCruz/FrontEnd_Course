@@ -9,7 +9,11 @@
         <meta name="description" content="Projeto realizado no Curso de WebDesign">
         <meta name="keywords" content="Projeto, WeDesign, FrontEnd">
 
+        
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Open+Sans">
         <!-- Pode ser dessa forma, dessa forma vc baixa todos os icons e deixa salvo no servidor  <link rel="stylesheet" href="../00_FontAwesome/css/all.min.css"> OU-->
         
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
@@ -26,10 +30,10 @@
                 <img src="images/avatar.jpg" alt="Imagem Homem de Costas">
             </a>
 
-            <h1>Trabalhos e Groselhas de <br>
+            <h1 class="main-header-title">Trabalhos e Groselhas de <br>
             <strong>Daniel San</strong>,<br>
             um Zé Ninguém qualquer <br>
-            Retirado de <a href="http://html5up.net">html5up.com</a></h1>
+            Retirado de <a class="main-header-link" href="http://html5up.net">html5up.com</a></h1>
 
         </header>
 
@@ -143,12 +147,18 @@
 
                 <h4>Text</h4>
                 <p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>. This is <sup>superscript</sup> text and this is <sub>subscript</sub> text. This is <!-- Dá pra usar o <u></u> mas é mais indicado no CSS --><u>underlined</u> and this is <code>code: for (;;) { ... }</code>. Finally, this is a <a href="#">link</a>.</p>
-            
+
+                <h1>título h1</h1>
+                <h2>título h2</h2>
+                <h3>título h3</h3>
+                <h4>título h4</h4>
+                <h5>título h5</h5>
+                <h6>título h6</h6>
 
             <hr>
 
             <blockquote cite="http://developer.mozilla.org">
-                <p>Essa é uma citação tirada da Mozilla Developer Center.</p>
+                Essa é uma citação tirada da Mozilla Developer Center.
             </blockquote><!--Citações Maiores-->
 
             <p>According to Mozilla's website, 
@@ -169,29 +179,47 @@
             <hr>
 
             <h4>Listas</h4>
-            <h5>Não Ordenada</h5>
 
-            <ul>
-                <li>Lista 1</li>
-                <li>Lista 2</li>
-                <li>Lista 3</li>
-            </ul>
+            <div class="row">
+                <div class="col-2">
 
-            <h5>Ordenada</h5>
+                <h5>Não Ordenada</h5>
 
-            <ol>
-                <li>Lista 1</li>
-                <li>Lista 2</li>
-                <li>Lista 3</li>
-            </ol>
+                <ul>
+                    <li>Lista 1</li>
+                    <li>Lista 2</li>
+                    <li>Lista 3</li>
+                </ul>
 
-            <h5>Alternate</h5>
+                <h5>Ordenada</h5>
 
-            <ul class="ul-alternate">
-                <li>Lista 1</li>
-                <li>Lista 2</li>
-                <li>Lista 3</li>
-            </ul>            
+                <ol>
+                    <li>Lista 1</li>
+                    <li>Lista 2</li>
+                    <li>Lista 3</li>
+                </ol>
+
+                </div>
+
+                <div class="col-2">
+
+                    <h5>Alternate</h5>
+
+                    <ul class="ul-alternate">
+                        <li>Lista 1</li>
+                        <li>Lista 2</li>
+                        <li>Lista 3</li>
+                    </ul>          
+            
+                    <h5>Icons</h5>
+
+                    <ul class="ul-icons">
+                    <li><i class="fa-brands fa-facebook icon"></i></li>
+                    <li><i class="fa-brands fa-twitter icon"></i></li>
+                    </ul>
+
+                </div>
+            </div>
 
         </section>
 
@@ -203,7 +231,7 @@
 
             <i class="fa-brands fa-facebook icon"></i>
             <i class="fa-brands fa-twitter icon"></i>
-                    
+
 
         <h5>Actions</h5>
 
