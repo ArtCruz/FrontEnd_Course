@@ -110,33 +110,42 @@
 
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum atque numquam facilis corporis ipsa totam voluptatibus modi distinctio hic quaerat, eaque, doloremque saepe. Qui nulla temporibus velit quia, rem accusamus!</p>
 
-                <form method="post">
-
-                    <label for="nome">Nome: </label>
-                    <input type="text" name="nome" id="nome" placeholder="Nome">
-                    <input type="email" name="email" id="email" placeholder="Email">
-
-                    <textarea name="mensagem" id="mensagem">Escreva Aqui</textarea>
-
-                    <input type="submit" value="Enviar">
-                </form>
-
-                <address>
-                    
-                    <p>                        
-                        <span>Endereço: </span>
-                        1234 Somewhere Rd. Nashville, TN 00000 United States of Guarana
-                    </p>
-                    <p>                        
-                        <span>Telefone: </span>
-                        123-456-789
-                    </p>
-                    <p>                        
-                        <span>E-mail: </span>
-                        email@server.com
-                    </p>
-
-                </address>
+                <div class="row">
+                    <div class="col-2-3">
+                        <form method="post">
+                            <div class="row">
+                                <div class="col-2">
+                                    <label>Nome: </label>
+                                    <input type="text" name="nome" id="nome">
+                                </div>
+                                <div class="col-2">
+                                    <label>Email: </label>
+                                    <input type="email" name="email" id="email">
+                                </div>
+                            </div>
+                            <label>Digite sua Mensagem: </label>
+                            <textarea name="mensagem" id="mensagem"></textarea>
+        
+                            <input type="submit" value="Enviar" class="button-default button-default-stroke button-default-big">
+                        </form>
+                    </div>
+                    <div class="col-1-3">
+                        <address>                    
+                            <p>                        
+                                <span>Endereço: </span>
+                                1234 Somewhere Rd. Nashville, TN 00000 United States of Guarana
+                            </p>
+                            <p>                        
+                                <span>Telefone: </span>
+                                123-456-789
+                            </p>
+                            <p>                        
+                                <span>E-mail: </span>
+                                email@server.com
+                            </p>        
+                        </address>
+                    </div>
+                </div>
 
             </section>
 
@@ -168,13 +177,10 @@
 
             <h4>Preformatted</h4>
 
-            <pre>
-                <code>
+            <pre><code>
 &lt;script&gt;<!-- A indentação fica salva no portanto tem que ficar sem nenhum espaço -->
     alert('oi');
-&lt;/script&gt;
-                </code>
-            </pre>
+&lt;/script&gt;</code></pre>
 
             <hr>
 
@@ -223,7 +229,6 @@
 
         </section>
 
-        <hr>
 
         <section>
 
@@ -232,28 +237,37 @@
             <i class="fa-brands fa-facebook icon"></i>
             <i class="fa-brands fa-twitter icon"></i>
 
-
+        <hr>
+        
         <h5>Actions</h5>
 
-        <p>
-            <a href="#" class="buttom-default">Default</a>
-            <a href="#" class="buttom-default buttom-default-stroke">Default</a>
-        </p>
+        <div class="row">
+            <div class="col-2">
 
-        <p>
-            <a href="#" class="buttom-default buttom-default-small">Default</a>
-            <a href="#" class="buttom-default buttom-default-small buttom-default-stroke">Default</a>
-        </p>
+                <p>
+                    <a href="#" class="button-default">Default</a>
+                    <a href="#" class="button-default button-default-stroke">Default</a>
+                </p>
+        
+                <p>
+                    <a href="#" class="button-default button-default-small">Default</a>
+                    <a href="#" class="button-default button-default-small button-default-stroke">Default</a>
+                </p>
 
-        <p>
-            <a href="#" class="buttom-default buttom-default-full">Default</a>
-            <a href="#" class="buttom-default buttom-default-full buttom-default-stroke">Default</a>
-        </p>
-
-        <p>
-            <a href="#" class="buttom-default buttom-default-full button-default-small">Default</a>
-            <a href="#" class="buttom-default buttom-default-full buttom-default-small buttom-default-stroke">Default</a>
-        </p>
+            </div>
+            <div class="col-2">
+                <p>
+                    <a href="#" class="button-default button-default-full">Default</a>
+                    <a href="#" class="button-default button-default-full button-default-stroke">Default</a>
+                </p>
+        
+                <p>
+                    <a href="#" class="button-default button-default-full button-default-small">Default</a>
+                    <a href="#" class="button-default button-default-full button-default-small button-default-stroke">Default</a>
+                </p>
+            </div>
+        </div>       
+        
 
         <h4>Table</h4>
         <h5>Default</h5>
@@ -267,10 +281,6 @@
                     <th>Price</th>
                 </tr>
             </thead>
-            <tfoot>
-                <td colspan="1"><td>
-                <td>100.00</td>
-            </tfoot>
             <tbody>
                 <tr>
                     <td>Item One</td>
@@ -297,15 +307,19 @@
                     <td>Item Five</td>
                     <td>Ante turpis integer aliquet porttitor.</td>
                     <td>29.99</td>
-                </tr>
-                
+                </tr>              
             </tbody>
+
+            <tfoot>
+                <td colspan="1"><td>
+                <td>100.00</td>
+            </tfoot>
 
         </table>
 
         <h5>Alternate</h5>
 
-        <table class="table-alterante">
+        <table class="table alterante">
 
             <thead>
                 <tr>
@@ -353,23 +367,23 @@
         <h5>Button</h5>
 
             <p>
-                <button class="buttom-default buttom-default-stroke">Default</button>
-                <button class="buttom-default">Default</button>
+                <button class="button-default button-default-stroke">Default</button>
+                <button class="button-default">Default</button>
             </p>
     
             <p>
-                <button class="buttom-default buttom-default-small">Default</button>
-                <button class="buttom-default buttom-default-small buttom-default-stroke">Default</button>
+                <button class="button-default button-default-small">Default</button>
+                <button class="button-default button-default-small button-default-stroke">Default</button>
             </p>
     
             <p>
-                <button class="buttom-default buttom-default-full">Default</button>
-                <button class="buttom-default buttom-default-full buttom-default-stroke">Default</button>
+                <button class="button-default button-default-full">Default</button>
+                <button class="button-default button-default-full button-default-stroke">Default</button>
             </p>
     
             <p>
-                <button class="buttom-default buttom-default-full button-default-small">Default</button>
-                <button class="buttom-default buttom-default-full buttom-default-small buttom-default-stroke">Default</button>
+                <button class="button-default button-default-full button-default-small">Default</button>
+                <button class="button-default button-default-full button-default-small button-default-stroke">Default</button>
             </p>
             <input type=submit class="button-default" value="mandar">
 
@@ -377,8 +391,7 @@
 
             <form>
 
-                <input type="text" name="name" id="name" placeholder="Nome">
-                <input type="email" name="email" id="email" placeholder="Email">
+                
 
                 <select>
                     <option value="0">Selecione</option>
